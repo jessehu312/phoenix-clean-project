@@ -10,9 +10,9 @@ defmodule MyApp.Accounts do
 
   def raw_sql_example do
     case MyApp.Repo.query("SELECT * FROM users") do
-      {:ok, res} ->
+      {:ok, res} -> res
         # do something with the result
-      {:error, res} ->
+      {:error, res} -> res
         # do something with the error
     end
   end
